@@ -1,12 +1,8 @@
 pipeline{
   agent any
-    environment{
-      test= "xy"
-    }
   parameters{
     string(name:'pet',defaultvalue:'Jimmy',Description:'Name of my pet')
   }
-    agent any
     stages{
       stage('Hello'){
         steps{
