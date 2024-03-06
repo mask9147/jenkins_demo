@@ -7,7 +7,7 @@ pipeline{
       stage('Hello'){
         steps{
           echo 'Environment S1'
-          echo '$ my pet name is params.pet'
+          echo '$ my pet name is ${params.pet}'
         }
       }
     }
