@@ -3,11 +3,14 @@ pipeline{
   parameters{
           string(name:'pet',defaultValue :'Jimmy',description:'Name of my pet')
   }
+  options{
+    retry(3)
+  }
     stages{
       stage('Hello'){
         steps{
           echo 'Environment S1'
-          echo "my pet name is, ${params.pet}!"
+          echo "my pet name is, ${params.Jimmy}!"
         }
       }
     }
