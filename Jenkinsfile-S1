@@ -11,6 +11,7 @@ pipeline{
         steps{
           echo 'Environment S1'
           echo "my pet name is, ${params.jimmy}!"
+          sh 'make'
         }
       }
     }
