@@ -1,7 +1,7 @@
 pipeline{
   agent any
   parameters{
-          string(name:'pet',defaultValue :'Jimmy',Description:'Name of my pet')
+          string(name:'pet',defaultValue :'Jimmy',description:'Name of my pet')
   }
     stages{
       stage('Hello'){
